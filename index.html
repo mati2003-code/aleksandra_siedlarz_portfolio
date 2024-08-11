@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Modelki</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Aleksandra Siedlarz</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <h2>O mnie</h2>
+        <p>
+            Jestem profesjonalną modelką z kilkuletnim doświadczeniem w branży modowej. Pracuję z najlepszymi fotografami
+            i projektantami. W mojej pracy stawiam na profesjonalizm, kreatywność i zaangażowanie.
+        </p>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <!-- Wstaw tu swoje zdjęcia, zmieniając src na odpowiednie ścieżki -->
+            <img src="images/pic-1.jpg" alt="Photo 1" class="gallery-item">
+            <img src="images/pic-2.jpg" alt="Photo 2" class="gallery-item">
+            <img src="images/pic-3.jpg" alt="Photo 3" class="gallery-item">
+            <img src="images/pic-3.jpg" alt="Photo 3" class="gallery-item">
+            <!-- Dodaj resztę zdjęć -->
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Kontakt</h2>
+        <form>
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Designed and egzecuted by mdev_coding</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
