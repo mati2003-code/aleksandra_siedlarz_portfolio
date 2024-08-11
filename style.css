@@ -107,6 +107,7 @@ h2 {
 }
 
 /* Kontakt */
+
 .contact-section {
     background-color: #ffffff;
     padding: 60px 20px;
@@ -130,6 +131,9 @@ h2 {
     border-radius: 50px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Upewniamy się, że tekst jest wyśrodkowany */
+    width: calc(50% - 20px); /* Szerokość przycisków dla większych ekranów */
+    min-width: 150px; /* Minimalna szerokość dla mniejszych ekranów */
 }
 
 .contact-btn:hover {
@@ -260,7 +264,9 @@ footer {
     .contact-section {
         padding: 40px 10px;
     }
+
+    .contact-btn {
+        width: 100%;
+        font-size: 1em;
+    }
 }
-
-
-
