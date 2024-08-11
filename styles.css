@@ -9,6 +9,10 @@ body {
     line-height: 1.6;
 }
 
+p{
+ font-style: italic;
+}
+
 header {
     background: linear-gradient(135deg, #dbe6f2 0%, #c8d6e5 100%);
     padding: 20px 0;
@@ -111,6 +115,7 @@ h2 {
     background: #fff;
     padding: 60px 20px;
     text-align: center;
+    font-style: italic;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
