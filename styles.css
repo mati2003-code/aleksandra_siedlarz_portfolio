@@ -120,7 +120,7 @@ h2 {
     color: #333;
 }
 
-.personal-info, .experience {
+.personal-info, .experience, .publications {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -129,12 +129,20 @@ h2 {
     margin: 0 auto;
 }
 
-.personal-info li, .experience li {
+.personal-info li, .experience li, .publications li {
     font-size: 1.1em;
     margin-bottom: 10px;
 }
+.publications a {
+    color: inherit;
+    text-decoration: none;
+}
+.publications li:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+} 
 
-.personal-info li strong, .experience li {
+.personal-info li strong, .experience li, .publications li {
     font-weight: bold;
 }
 
@@ -145,9 +153,9 @@ h2 {
     overflow: hidden; /* Zapobiega przewijaniu tła */
 }
 
-.contact-background {
+.background {
     position: absolute;
-    top: 0;
+    top: 16%;
     left: 0;
     width: 100%;
     height: 100%;
