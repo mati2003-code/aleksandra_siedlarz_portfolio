@@ -243,8 +243,9 @@ footer {
     }
 
     .contact-btn {
-        width: 100%;
-        text-align: center;
+        width: 80%;
+        margin: auto;
+        font-size: 1em;
     }
 }
 
@@ -266,7 +267,8 @@ footer {
     }
 
     .contact-btn {
-        width: 100%;
+        width: 80%;
+        margin: auto;
         font-size: 1em;
     }
 }
