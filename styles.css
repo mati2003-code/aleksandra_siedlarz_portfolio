@@ -53,86 +53,68 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .section {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.intro-section {
     background: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .intro-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.info-column,
-.experience-column {
-    flex: 1 1 45%;
-    max-width: 500px;
+.info-column, .experience-column {
+    flex: 1;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
+.info-column h2, .experience-column h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #444;
 }
 
-ul.personal-info,
-ul.experience,
-ul.publications {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul.personal-info li,
-ul.experience li,
-ul.publications li {
-    margin-bottom: 10px;
+.personal-info li, .experience li, .publications li {
     font-size: 1.1em;
-}
-
-ul.personal-info li i,
-ul.experience li i,
-ul.publications li i {
-    color: #243B55;
-    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .publications a {
     color: inherit;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .publications a:hover {
-    color: #007bff; 
-    transition-duration: 0.5s;
+    color: #007bff;
 }
 
-.about-section {
-    background: #fff;
-}
-
-#portfolio {
-    background: #fff;
-    text-align: center;
+.personal-info li i, .experience li i {
+    margin-right: 10px;
+    color: #007bff;
 }
 
 .gallery {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -140,8 +122,8 @@ ul.publications li i {
     width: 200px;
     height: 300px;
     object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+    border-radius: 8px;
+    transition: transform 0.3s;
 }
 
 .gallery-item:hover {
@@ -149,62 +131,91 @@ ul.publications li i {
 }
 
 .more-photos {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
 .more-photos-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #243B55;
+    width: 100px;
+    background-color: #007bff;
     color: #fff;
-    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .more-photos-btn:hover {
-    background-color: #141E30;
+    background-color: #0056b3;
 }
 
 .contact-section {
-    background: #f9f9f9;
+    background-color: #243B55;
+    color: #fff;
     padding: 60px 20px;
-    position: relative;
+    border-radius: 0;
+    margin-bottom: 0;
 }
 
-.contact-content {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+.contact-section h2 {
+    display: flex;
+    justify-content: center;
 }
 
 .contact-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
     margin-top: 20px;
 }
 
 .contact-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #243B55;
+    background-color: #007bff;
     color: #fff;
-    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .contact-btn:hover {
-    background-color: #141E30;
+    background-color: #0056b3;
 }
 
 footer {
-    background: #243B55;
+    background-color: #141E30;
     color: #fff;
-    padding: 10px;
     text-align: center;
-    font-size: 0.9em;
+    padding: 10px 0;
 }
 
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
 
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
