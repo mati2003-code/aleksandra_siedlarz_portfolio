@@ -24,7 +24,7 @@ header {
 }
 
 .header-container .logo {
-    max-width: 80px;
+    max-width: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -161,26 +161,55 @@ section {
 .contact-section h2 {
     display: flex;
     justify-content: center;
+    margin-top: -40px;
 }
+
+.contact-names {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: .8em;
+    margin-bottom: 20px;
+}
+
+.contact-names li {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 
 .contact-buttons {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
 .contact-btn {
-    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition-duration: 0.3s;
+}
+
+.contact-btn.instagram-btn {
+    background-color: #C13584;
+}
+
+.contact-btn.email-btn {
+    background-color: #D44638;
+}
+
+.contact-btn.facebook-btn {
+    background-color: #1877F2; 
 }
 
 .contact-btn:hover {
-    background-color: #0056b3;
+    opacity: 0.8; 
 }
 
 footer {
@@ -218,4 +247,12 @@ footer {
     font-weight: bold;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    .contact-buttons {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 
