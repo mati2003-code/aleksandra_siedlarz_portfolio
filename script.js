@@ -1,33 +1,33 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
     const galleryItems = document.querySelectorAll('.gallery-item');
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     const closeBtn = document.querySelector('.close');
 
     galleryItems.forEach(item => {
-        item.addEventListener('click', function () {
+        item.addEventListener('click', () => {
             lightbox.style.display = 'flex';
-            lightboxImg.src = this.src;
+            lightboxImg.src = item.src;
         });
     });
 
-    closeBtn.addEventListener('click', function () {
+    closeBtn.addEventListener('click', () => {
         lightbox.style.display = 'none';
     });
 
-    lightbox.addEventListener('click', function (e) {
-        if (e.target !== lightboxImg && e.target !== closeBtn) {
+    lightbox.addEventListener('click', (e) => {
+        if (e.target !== lightboxImg) {
             lightbox.style.display = 'none';
         }
     });
 
-    // Zamknięcie lightboxa przy naciśnięciu klawisza Escape
-    document.addEventListener('keydown', function (e) {
+    document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             lightbox.style.display = 'none';
         }
     });
 });
+
 
 
 
