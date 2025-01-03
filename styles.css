@@ -96,7 +96,7 @@ h2 {
 /* Galeria zdjęć */
 .gallery {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
@@ -104,7 +104,7 @@ h2 {
 
 .gallery-item {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
